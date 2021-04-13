@@ -1,0 +1,227 @@
+/* fonts */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+#navbar {
+  justify-content: space-around;
+}
+@media (min-width: 992px) {
+  .nav-link {
+    padding: 0 2.5em !important;
+  }
+}
+
+#mainNav {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    border: none;
+    background-color: transparent;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    transition: font-size 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand img {
+    /* height: 2rem; */
+    transition: height 0.3s ease-in-out;
+  }
+  #mainNav.navbar-shrink {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+  }
+  /* #mainNav.navbar-shrink .navbar-brand svg,
+  #mainNav.navbar-shrink .navbar-brand img {
+    height: 1.5rem;
+  } */
+  #mainNav .navbar-nav .nav-item {
+    margin-right: 1rem;
+  }
+  #mainNav .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+}
+
+a.nav-link {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.hero {
+  background-image: url("../img/background-moval-marketing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 95vh;
+  /*   margin-top: -129px; */
+}
+
+.logo {
+  width: 240px;
+}
+@media (max-width: 576px) {
+  .logo {
+    width: 190px;
+  }
+}
+.slogan {
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 300;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ffffff;
+  background-color: transparent;
+  border-radius: 55px 0px 55px 0px;
+  padding: 1.5rem;
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  .slogan {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .slogan {
+    font-size: 16px;
+    padding: 0.5rem;
+    line-height: 20px;
+  }
+}
+
+section {
+  margin-bottom: 5em;
+}
+
+.about h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.parrafo {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 23px;
+  text-align: justify;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  padding-left: 74px;
+}
+
+.call-action {
+  background-image: url("../img/background-2-moval-marketing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.call-action p {
+  line-height: 40px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .call-action p {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .call-action p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.services h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.services p {
+  text-align: center;
+}
+.card-orange {
+  background-image: url("../img/card-orange.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 250px;
+  height: 380px;
+  margin: 0 auto;
+}
+.card-gren {
+  background-image: url("../img/card-green.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 250px;
+  height: 380px;
+  margin: 0 auto;
+}
+.card-orange ul,
+.card-gren ul {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+}
+.card-orange li,
+.card-gren li {
+  margin-left: -25px;
+}
+.card-orange h5,
+.card-gren h5 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 230px;
+  width: 225px;
+}
+.btn-home {
+  color: #ffffff;
+  background-color: #666666;
+  border-color: #666666;
+  font-weight: 600;
+}
+.icons {
+  width: 28px;
+  height: 28px;
+}
+.ancla:before {
+  display: block;
+  content: " ";
+  margin-top: -130px;
+  height: 130px;
+  visibility: hidden;
+}
