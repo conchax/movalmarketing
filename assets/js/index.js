@@ -52,5 +52,9 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    /* $("#v-pills-tab .nav-link").hover(function(){
+      $(this).tab('show');
+    }); */
 })(jQuery); // End of use strict
 

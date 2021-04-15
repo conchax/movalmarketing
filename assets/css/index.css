@@ -217,6 +217,7 @@ ul {
 .icons {
   width: 28px;
   height: 28px;
+  opacity: 0.6;
 }
 .ancla:before {
   display: block;
@@ -230,4 +231,39 @@ ul {
   padding-right: 0;
   margin-left: 0;
   margin-right: 0;
+}
+
+footer {
+  background-color: #d6d6d6;
+  font-size: 14px;
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+}
+footer button {
+  padding-top: 0;
+}
+
+@media (max-width: 767px) {
+  footer button {
+    margin-top: 0.8rem !important;
+  }
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #f15a24 !important;
+  background-color: transparent;
+}
+
+#v-pills-tab a.nav-link {
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+  border-bottom: 2px solid #f15a24;
+}
+
+#v-pills-tabContent {
+  border-left: 2px solid #666;
 }
