@@ -7,55 +7,13 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
-#navbar {
-  justify-content: space-around;
-}
-@media (min-width: 992px) {
-  .nav-link {
-    padding: 0 2.5em !important;
-  }
-}
 
-#mainNav {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-@media (min-width: 992px) {
-  #mainNav {
-    border: none;
-    background-color: transparent;
-    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
-  }
-  #mainNav .navbar-brand {
-    transition: font-size 0.3s ease-in-out;
-  }
-  #mainNav .navbar-brand img {
-    /* height: 2rem; */
-    transition: height 0.3s ease-in-out;
-  }
-  #mainNav.navbar-shrink {
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
-  }
-  /* #mainNav.navbar-shrink .navbar-brand svg,
-  #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
-  } */
-  #mainNav .navbar-nav .nav-item {
-    margin-right: 1rem;
-  }
-  #mainNav .navbar-nav .nav-item:last-child {
-    margin-right: 0;
-  }
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 a.nav-link {
   color: #ffffff;
-  font-size: 16px;
-  text-align: center;
-  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -65,52 +23,38 @@ a.nav-link {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 95vh;
-  /*   margin-top: -129px; */
+  height: 100vh;
+  vertical-align: middle;
 }
-
+.hero h2 {
+  font-size: 34px;
+  font-weight: 600;
+}
+.hero h3 {
+  font-weight: 600;
+}
 .logo {
-  width: 240px;
-}
-@media (max-width: 576px) {
-  .logo {
-    width: 190px;
-  }
-}
-.slogan {
-  font-size: 25px;
-  letter-spacing: 2px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 30px;
-  font-weight: 300;
-  border-style: solid;
-  border-width: 5px;
-  border-color: #ffffff;
-  background-color: transparent;
-  border-radius: 55px 0px 55px 0px;
-  padding: 1.5rem;
-  max-width: 800px;
+  width: 180px;
 }
 
 @media (max-width: 768px) {
-  .slogan {
-    font-size: 18px;
-    line-height: 25px;
-  }
 }
-@media (max-width: 576px) {
-  .slogan {
-    font-size: 16px;
-    padding: 0.5rem;
-    line-height: 20px;
+@media (max-width: 547px) {
+  .hero h2 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .hero h3 {
+    font-weight: 600;
   }
 }
 
 section {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
-
+li.nav-item {
+  padding: 0 0.6em;
+}
 .about h2 {
   font-size: 20px;
   font-weight: bold;
@@ -118,11 +62,10 @@ section {
 .parrafo {
   font-size: 18px;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 23px;
-  text-align: justify;
 }
-ul {
+.about ul {
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -134,35 +77,39 @@ ul {
 }
 
 .call-action {
-  background-image: url("../img/background-2-moval-marketing.jpg");
+  background-image: url("../img/girl-cell.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 250px;
+  height: 300px;
+}
+.call-action h2 {
+  font-weight: 600;
+  color: #333;
 }
 
 .call-action p {
-  line-height: 40px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 35px;
-  font-weight: 600;
+  line-height: 1.4rem;
+  color: #575757;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 1em;
 }
-
-@media (max-width: 992px) {
-  .call-action p {
-    font-size: 28px;
-    line-height: 30px;
+@media (max-width: 400px) {
+  .call-action h2 {
+    font-size: 1.5rem;
   }
-}
-@media (max-width: 576px) {
   .call-action p {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 16px;
   }
 }
 
+@media (max-width: 550px) {
+  .call-action {
+    height: 380px;
+  }
+}
 .services h2 {
   text-align: center;
   text-transform: uppercase;
@@ -170,49 +117,36 @@ ul {
 .services p {
   text-align: center;
 }
-.card-orange {
-  background-image: url("../img/card-orange.png");
-  background-repeat: no-repeat;
+
+.hero-services {
+  margin-top: 65px;
+  background-image: url("../img/header-servicios-movalmarketing.jpg");
   background-position: center;
-  border: 0;
-  width: 250px;
-  height: 380px;
-  margin: 0 auto;
-}
-.card-gren {
-  background-image: url("../img/card-green.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  border: 0;
-  width: 250px;
-  height: 380px;
-  margin: 0 auto;
 }
-.card-orange ul,
-.card-gren ul {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 300;
+
+.hero-services h2 {
+  font-weight: 600;
+  font-size: 30px;
 }
-.card-orange li,
-.card-gren li {
-  margin-left: -25px;
-}
-.card-orange h5,
-.card-gren h5 {
-  font-size: 24px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-  position: absolute;
-  top: 230px;
-  width: 225px;
-}
+
 .btn-home {
   color: #ffffff;
   background-color: #666666;
   border-color: #666666;
   font-weight: 600;
+}
+.btn-home:hover {
+  background-color: #f15a24;
+}
+.btn-home-two {
+  color: aliceblue;
+  background-color: #3a64a5;
+  border-color: #333;
+}
+.btn-home-two:hover {
+  background-color: #ccc;
 }
 .icons {
   width: 28px;
@@ -266,4 +200,86 @@ footer button {
 
 #v-pills-tabContent {
   border-left: 2px solid #666;
+}
+.socialmenu {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+}
+.mto {
+  margin-top: 50px;
+}
+
+.blackshadow {
+  color: #ffffff;
+  text-shadow: #333333 1px 1px 2px;
+  font-weight: 600;
+}
+.contactus h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.circle {
+  border-radius: 50%;
+  width: 200px;
+  margin: 0 auto;
+}
+.card {
+  border: 0;
+}
+.card-footer {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 0;
+}
+.design {
+  background-color: #c9cbcd;
+  padding-bottom: 6em;
+}
+.designtwo {
+  background-color: #6cb0c7;
+  padding-bottom: 6em;
+}
+.design h1,
+.designtwo h1 {
+  font-weight: 600;
+}
+.designtwo .parrafo {
+  color: #ffffff;
+}
+.black {
+  background-color: #ffffff;
+}
+.subservices {
+  font-size: 20px;
+  font-weight: 600;
+}
+.list-group {
+  justify-content: center;
+}
+
+.list-group-item {
+  border: 0;
+  display: list-item;
+}
+.subservices ul {
+  list-style-image: url("../img/icons_circle-fill.png");
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .subservices ul {
+    text-align: left;
+  }
+}
+.subservices li {
+  padding: 0 3em 0 0.1em;
+}
+.modal-header .close {
+  padding: 0;
+  margin: -1.2rem -0.7rem 0 auto;
+  font-size: 2.4rem;
+}
+.modal-header {
+  padding: 0;
+  border: 0;
 }
