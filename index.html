@@ -236,20 +236,29 @@
           <h2 class="mb-2">Contact Us</h2>
         </div>
         <div class="col-12 col-md-6 mt-4">
-          <form class="mb-4">
+
+          <form id="contactForm" name="sentMessage" novalidate="novalidate" class="mb-4">
             <div class="form-group">
-              <input type="text" class="form-control" id="nombre" placeholder="Contact Name ">
+              <input type="text" class="form-control" id="name" placeholder="Contact Name" required="required"
+                data-validation-required-message="Please enter your name." />
+              <p class="help-block text-danger"></p>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" id="nombre" placeholder="Company Name ">
+              <input type="text" class="form-control" id="company" placeholder="Company Name " required="required"
+                data-validation-required-message="Please enter your Company." />
+              <p class="help-block text-danger"></p>
             </div>
             <div class="form-group">
-              <input type="tel" class="form-control" id="nombre" placeholder="Phone number">
+              <input type="tel" class="form-control" id="phone" placeholder="Phone number" required="required"
+                data-validation-required-message="Please enter your phone number ." />
+              <p class="help-block text-danger"></p>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" id="nombre" placeholder="E-mail">
+              <input type="email" class="form-control" id="email" placeholder="E-mail" required="required"
+                data-validation-required-message="Please enter your emai address." />
+              <p class="help-block text-danger"></p>
             </div>
-            <button type="submit" class="btn btn-home container-fluid">Send</button>
+            <button type="submit" class="btn btn-home container-fluid" id="sendMessageButton">Send</button>
           </form>
         </div>
         <div class="col-12 col-md-6 align-items-center text-center">
@@ -310,6 +319,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     -->
+  <script src="assets/mail/jqBootstrapValidation.js"></script>
+  <script src="assets/mail/contact_me.js"></script>
 
 </body>
 
